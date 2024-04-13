@@ -1,0 +1,65 @@
+{
+    "dogs": [
+      {
+        "id": 1,
+        "name": "Johnny",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_1757.jpg",
+        "weight": 25
+      },
+      {
+        "id": 2,
+        "name": "Gabe",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/caesar.jpg",
+        "weight": 45
+      },
+      {
+        "id": 3,
+        "name": "Caleb",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_10078.jpg",
+        "weight": 40
+      },
+      {
+        "id": 4,
+        "name": "Donnie",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_11836.jpg",
+        "weight": 50
+      },
+      {
+        "id": 5,
+        "name": "Nick",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_1638.jpg",
+        "weight": 65
+      },
+      {
+        "id": 6,
+        "name": "Casey",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_2737.jpg",
+        "weight": 60
+      },
+      {
+        "id": 7,
+        "name": "Preston",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_3297.jpg",
+        "weight": 40
+      },
+      {
+        "id": 8,
+        "name": "Tony",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_3799.jpg",
+        "weight": 35
+      },
+      {
+        "id": 9,
+        "name": "Andrea",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_9796.jpg",
+        "weight": 20
+      },
+      {
+        "id": 10,
+        "name": "Luca",
+        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_6008.jpg",
+        "weight": 5
+      }
+    ]
+  }
+  
