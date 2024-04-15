@@ -1,65 +1,84 @@
 {
-    "dogs": [
-      {
-        "id": 1,
-        "name": "Johnny",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_1757.jpg",
-        "weight": 25
-      },
-      {
-        "id": 2,
-        "name": "Gabe",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/caesar.jpg",
-        "weight": 45
-      },
-      {
-        "id": 3,
-        "name": "Caleb",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_10078.jpg",
-        "weight": 40
-      },
-      {
-        "id": 4,
-        "name": "Donnie",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_11836.jpg",
-        "weight": 50
-      },
-      {
-        "id": 5,
-        "name": "Nick",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_1638.jpg",
-        "weight": 65
-      },
-      {
-        "id": 6,
-        "name": "Casey",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_2737.jpg",
-        "weight": 60
-      },
-      {
-        "id": 7,
-        "name": "Preston",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_3297.jpg",
-        "weight": 40
-      },
-      {
-        "id": 8,
-        "name": "Tony",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_3799.jpg",
-        "weight": 35
-      },
-      {
-        "id": 9,
-        "name": "Andrea",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_9796.jpg",
-        "weight": 20
-      },
-      {
-        "id": 10,
-        "name": "Luca",
-        "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_6008.jpg",
-        "weight": 5
-      }
-    ]
-  }
-  
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Johnny",
+      "nickname": "Naw",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_1757.jpg",
+      "weight": 25,
+      "food": "Cinnamon Thingy"
+    },
+    {
+      "id": 2,
+      "name": "Gabe",
+      "nickname": "Sanch",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/caesar.jpg",
+      "weight": 45,
+      "food": "Lobster Fried Rice"
+    },
+    {
+      "id": 3,
+      "name": "Caleb",
+      "nickname": "Short King",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_10078.jpg",
+      "weight": 40,
+      "food": "Whiskey"
+    },
+    {
+      "id": 4,
+      "name": "Donnie",
+      "nickname": "Boss Man",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_11836.jpg",
+      "weight": 50,
+      "food": "Cilantro"
+    },
+    {
+      "id": 5,
+      "name": "Nick",
+      "nickname": "Bro",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_1638.jpg",
+      "weight": 65,
+      "food": "Paris Baguette"
+    },
+    {
+      "id": 6,
+      "name": "Casey",
+      "nickname": "Captain America",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_2737.jpg",
+      "weight": 60,
+      "food": "Hot Dogs"
+    },
+    {
+      "id": 7,
+      "name": "Preston",
+      "nickname": "Baby Christmas",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_3297.jpg",
+      "weight": 40,
+      "food": "Protein Bars"
+    },
+    {
+      "id": 8,
+      "name": "Tony",
+      "nickname": "Tech",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_3799.jpg",
+      "weight": 35,
+      "food": "Salad and Go"
+    },
+    {
+      "id": 9,
+      "name": "Andrea",
+      "nickname": "Andromeda",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_9796.jpg",
+      "weight": 20,
+      "food": "Artichokes"
+    },
+    {
+      "id": 10,
+      "name": "Luca",
+      "nickname": "Skubb",
+      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_6008.jpg",
+      "weight": 5,
+      "food": "French Fries"
+    }
+  ]
+}

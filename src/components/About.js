@@ -1,23 +1,24 @@
 import React from "react";
-import NavBar from './NavBar'
 
 function About() {
+
+    const backgroundImage = <div
+      style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundImage: `url("https://img.freepik.com/premium-photo/colorful-dog-with-black-background-word-pit-bull-front_883148-465.jpg?w=1480")`,
+      opacity: 0.2,
+      zIndex: -1,
+    }}>
+    </div>
+
     return (
         <>
-        <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundImage: `url("https://img.freepik.com/premium-photo/colorful-dog-with-black-background-word-pit-bull-front_883148-465.jpg?w=1480")`,
-          opacity: 0.2,
-          zIndex: -1,
-        }}
-      ></div>
+        {backgroundImage}
         <header>
-            <NavBar />
             <h1 className="App-header">About</h1>
         </header>
           <main className="About-main">

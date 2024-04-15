@@ -19,9 +19,9 @@ import Dropdown from 'react-bootstrap/Dropdown'
 function NavBar() {
     const [open, setOpen] = useState(false)
 
-    useEffect(() => {
-        console.log(open)
-    }, [open])
+    // useEffect(() => {
+    //     console.log(open)
+    // }, [open])
 
     function handleDropdown() {
         setOpen(!open)
