@@ -4,7 +4,6 @@ import {useOutletContext} from 'react-router-dom'
 
 function Pits() {
     const dogs = useOutletContext()
-    console.log(dogs)
 
     const dogsMap = dogs.map((dog) => (
         <PitCard key={dog.id} id={dog.id} name={dog.name} image={dog.image} weight={dog.weight} nickname={dog.nickname} food={dog.food}/>
