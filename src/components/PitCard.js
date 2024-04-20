@@ -20,7 +20,7 @@ function PitCard ({id, name, nickname, image, weight, food}) {
     <div className="column">
         <div className="ui fluid card">
             <div className="image">
-                <img src={image} alt='image' className="card-image ui raised card"/>
+                <img src={image} alt="A picture of a dog" className="card-image ui raised card"/>
             </div>
             <div className="content">
                 <span className="header">{name}</span>
