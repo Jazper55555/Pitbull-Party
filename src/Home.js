@@ -1,5 +1,4 @@
 import './App.css';
-import { useEffect, useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown'
 import { NavLink } from 'react-router-dom';
 
