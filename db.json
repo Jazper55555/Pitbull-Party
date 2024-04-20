@@ -79,30 +79,6 @@
       "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_6008.jpg",
       "weight": 5,
       "food": "French Fries"
-    },
-    {
-      "id": "4cc3",
-      "name": "Jazz",
-      "nickname": "Dr. J",
-      "image": "",
-      "weight": "55",
-      "snack": "Chips"
-    },
-    {
-      "id": "cb52",
-      "name": "Boopa",
-      "nickname": "Bagel",
-      "image": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_1132.jpg",
-      "weight": "40",
-      "snack": "Bagels"
-    },
-    {
-      "id": "01db",
-      "name": "asdf",
-      "nickname": "fsad",
-      "image": "",
-      "weight": "asdf",
-      "snack": "fsda"
     }
   ]
 }

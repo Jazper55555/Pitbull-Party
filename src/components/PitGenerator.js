@@ -17,7 +17,7 @@ function PitGenerator() {
     top: 0,
     left: 0,
     width: "100%",
-    height: "120%",
+    height: "130%",
     backgroundImage: `url("https://img.freepik.com/premium-vector/vector-cartoon-cute-pitbull-terrier-dog-seamless-pattern-background_52569-2140.jpg")`,
     opacity: 0.2,
     zIndex: -1,
@@ -40,49 +40,41 @@ function PitGenerator() {
     setSnack(e.target.value)
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
 
-    // dogs.map((dog) => {
-    //     if (dog.id === 11) {
-    //         fetch('http://localhost:3000/dogs/11', {
-    //             method: 'DELETE',
-    //             headers: {
-    //                 'Content-Type': 'application/json'
-    //             },
-    //             body: JSON.stringify({
-    //                 name: name,
-    //                 nickname: nickname,
-    //                 image: image,
-    //                 weight: weight,
-    //                 snack: snack
-    //             })
-    //         })        
-    //     }
-    // })
-
-    fetch('https://dog.ceo/api/breed/bullterrier/images/random')
-    .then(r => r.json())
-    .then(data => setImage(data.message))
+    try {
+        const responseImage = await fetch('https://dog.ceo/api/breed/bullterrier/images/random');
+        const imageData = await responseImage.json();
+        setImage(imageData.message);
     
-    fetch('http://localhost:3000/dogs', {
-        method: 'POST',
-        headers: {
+        for (const dog of dogs) {
+          if (dog.id === 11) {
+            await fetch(`http://localhost:3000/dogs/${dog.id}`, {
+              method: 'DELETE'
+            });
+          }
+        }
+    
+        const responseNewDog = await fetch('http://localhost:3000/dogs', {
+          method: 'POST',
+          headers: {
             'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
+          },
+          body: JSON.stringify({
             name: name,
             nickname: nickname,
-            image: image,
+            image: imageData.message,
             weight: weight,
-            snack: snack
-        })
-    })
-    .then(r => r.json())
-    .then(data => {
-        handleUpdate(data)
-        setNewDog(data)
-    })
+            food: snack
+          })
+        });
+        const newDogData = await responseNewDog.json();
+        setNewDog(newDogData);
+        handleUpdate(newDogData);
+      } catch (error) {
+        console.error(error);
+      }
 
     setName('')
     setNickname('')
@@ -91,27 +83,27 @@ function PitGenerator() {
 }
 
     const pitCard = newDog ?
-         (
-        <div key={newDog.id} className="ui centered card">
-            <div className="image">
-                <img src={image} alt="dogs" className="card-image ui raised card"/>
-            </div>
-            <div className="content">
-                <span className="header">{newDog.name}</span>
-                <div className="meta">
-                <span>Nickname: {newDog.nickname}</span>
+            (
+                <div key={newDog.id} className="ui centered card">
+                    <div className="image">
+                        <img src={newDog.image} alt="dogs" className="card-image ui raised card"/>
+                    </div>
+                    <div className="content">
+                        <span className="header">{newDog.name}</span>
+                        <div className="meta">
+                        <span>Nickname: {newDog.nickname}</span>
+                        </div>
+                        <div className="description">
+                        Weight: {newDog.weight} lbs
+                        </div>
+                    </div>
+                    <div className="extra content">
+                        <span className="center floated">
+                            Favorite Snack: {newDog.food}
+                        </span>
+                    </div>
                 </div>
-                <div className="description">
-                Weight: {newDog.weight} lbs
-                </div>
-            </div>
-            <div className="extra content">
-                <span className="center floated">
-                    Favorite Snack: {newDog.food}
-                </span>
-            </div>
-        </div>
-        ) : null
+                ) : null
 
     return (
         <>

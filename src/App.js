@@ -10,7 +10,7 @@ function App() {
         .then(r => r.json())
         .then(data => setDogs(data))
         .catch(error => console.error(error))
-      }, [dogs])
+      }, [])
 
     const contextData = {
         dogs: dogs, 
