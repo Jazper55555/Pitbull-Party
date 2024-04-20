@@ -6,18 +6,28 @@ function App() {
     const [dogs, setDogs] = useState([])
 
     useEffect(() => {
-        fetch('https://phase-2-project-json-server-vifp.onrender.com/dogs')
+        fetch('http://localhost:3000/dogs')
         .then(r => r.json())
         .then(data => setDogs(data))
         .catch(error => console.error(error))
-      }, [])
+      }, [dogs])
+
+    const contextData = {
+        dogs: dogs, 
+        handleUpdate: handleUpdate
+    }
+
+    function handleUpdate(obj) {
+        const updatedDogs = [...dogs, obj]
+        setDogs(updatedDogs)
+    }
 
     return (
         <>
         <header>
             <NavBar/>
         </header>
-        <Outlet context={dogs}/>
+        <Outlet context={contextData}/>
         </>
     )
 }

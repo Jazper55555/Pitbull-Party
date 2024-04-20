@@ -3,11 +3,13 @@ import PitCard from './PitCard'
 import {useOutletContext} from 'react-router-dom'
 
 function Pits() {
-    const dogs = useOutletContext()
+    const {dogs} = useOutletContext()
 
-    const dogsMap = dogs.map((dog) => (
-        <PitCard key={dog.id} id={dog.id} name={dog.name} image={dog.image} weight={dog.weight} nickname={dog.nickname} food={dog.food}/>
-    ))
+    const dogsMap = dogs.map((dog) => {
+        if (dog.id <= 10) {
+        return (<PitCard key={dog.id} id={dog.id} name={dog.name} image={dog.image} weight={dog.weight} nickname={dog.nickname} food={dog.food}/>
+    )}
+})
 
     const backgroundImage = <div 
         style={{

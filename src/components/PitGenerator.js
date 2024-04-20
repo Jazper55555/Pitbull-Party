@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import {useOutletContext} from 'react-router-dom'
 
 function PitGenerator() {
     const [name, setName] = useState('')
@@ -6,6 +7,9 @@ function PitGenerator() {
     const [weight, setWeight] = useState('')
     const [snack, setSnack] = useState('')
     const [image, setImage] = useState('')
+    const [newDog, setNewDog] = useState(null)
+
+    const {dogs, handleUpdate} = useOutletContext()
 
     const backgroundImage = <div
     style={{
@@ -36,16 +40,32 @@ function PitGenerator() {
     setSnack(e.target.value)
   }
 
-  useEffect(() => {
+  function handleSubmit(e) {
+    e.preventDefault()
+
+    // dogs.map((dog) => {
+    //     if (dog.id === 11) {
+    //         fetch('http://localhost:3000/dogs/11', {
+    //             method: 'DELETE',
+    //             headers: {
+    //                 'Content-Type': 'application/json'
+    //             },
+    //             body: JSON.stringify({
+    //                 name: name,
+    //                 nickname: nickname,
+    //                 image: image,
+    //                 weight: weight,
+    //                 snack: snack
+    //             })
+    //         })        
+    //     }
+    // })
+
     fetch('https://dog.ceo/api/breed/bullterrier/images/random')
     .then(r => r.json())
     .then(data => setImage(data.message))
-}, [image])
-
-  function handleSubmit(e) {
-    e.preventDefault()
     
-    fetch('https://phase-2-project-json-server-vifp.onrender.com/dogs', {
+    fetch('http://localhost:3000/dogs', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -59,8 +79,39 @@ function PitGenerator() {
         })
     })
     .then(r => r.json())
-    .then(data => console.log(data))
+    .then(data => {
+        handleUpdate(data)
+        setNewDog(data)
+    })
+
+    setName('')
+    setNickname('')
+    setWeight('')
+    setSnack('')
 }
+
+    const pitCard = newDog ?
+         (
+        <div key={newDog.id} className="ui centered card">
+            <div className="image">
+                <img src={image} alt="dogs" className="card-image ui raised card"/>
+            </div>
+            <div className="content">
+                <span className="header">{newDog.name}</span>
+                <div className="meta">
+                <span>Nickname: {newDog.nickname}</span>
+                </div>
+                <div className="description">
+                Weight: {newDog.weight} lbs
+                </div>
+            </div>
+            <div className="extra content">
+                <span className="center floated">
+                    Favorite Snack: {newDog.food}
+                </span>
+            </div>
+        </div>
+        ) : null
 
     return (
         <>
@@ -83,6 +134,8 @@ function PitGenerator() {
             <br></br>
             <button type='submit'>Submit</button>
           </form>
+          <br></br>
+          {pitCard}
           </main>
         </>
       );
