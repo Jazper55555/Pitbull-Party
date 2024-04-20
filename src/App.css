@@ -72,3 +72,21 @@ htl, body {
   font-size: min(10vw, 15px) ;
   color: rgb(223, 137, 8);
 }
+
+.card-image {
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  object-fit: cover; /* or object-fit: contain; depending on your preference */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the minimum width and number of columns as needed */
+  gap: 1rem; /* Adjust the gap value as needed */
+}
+
+.ui.three.wide.column .card {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+}

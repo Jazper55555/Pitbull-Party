@@ -13,7 +13,7 @@ function Home() {
       width: "100%",
       height: "120%",
       backgroundImage: `url("https://www.creativefabrica.com/wp-content/uploads/2023/05/04/Pitbull-Whimsical-watercolor-background-Graphics-68822601-3-580x387.jpg")`,
-      opacity: 0.2,
+      opacity: 0.15,
       zIndex: -1,
     }}>
     </div>
