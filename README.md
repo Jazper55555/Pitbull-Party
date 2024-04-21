@@ -60,7 +60,7 @@ This is a random image generator that will display a customized Pitbull Card sim
     7. **PitGenerator.js**
 
 3. There are 4 client-side routes (not including the App.js file) as follows:
-    1. *<Home> (same route as <App>)*
+    1. *<Home>*
     2. *<About>*
     3. *<Pits>*
     4. *<PitGenerator>*
