@@ -11,6 +11,7 @@ The goal of the webpage is for Pitbull enthusiasts to learn more about the lovab
 In order to open the webpage, you will need to fork the following two respositories:
 
 [Phase 2 Project Front End](https://github.com/Jazper55555/phase-2-project)
+
 [Phase 2 Project Back End](https://github.com/Jazper55555/json-server-template)
 
 The first repository allows you to actually run the webpage using:
