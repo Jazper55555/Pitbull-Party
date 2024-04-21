@@ -4,7 +4,7 @@ Welcome to Pitbull Party - a website designed for Pitbull lovers, enthusiasts, a
 
 ## Introduction/Purpose
 
-The goal of the webpage is for Pitbull enthusiasts to learn more about the lovable pups I have come to know over the years as well as create custom Pitbull cards with their own information. The webpage is broken up into various *pages* that can be navigated through the *Menu*.
+The goal of the webpage is for Pitbull enthusiasts to learn more about the lovable pups as well as create custom Pitbull cards with their own customized information. The webpage is broken up into various *pages* that can be navigated through the *Menu*.
 
 ## Opening the Webpage
 
@@ -46,4 +46,31 @@ Here, you can see the Pitbulls that make up the Pitbull Party crew as well as so
 This is a random image generator that will display a customized Pitbull Card similar to the ones in the Pits *page* based on the information you input. Each time you fill in the blanks, a new card is generated based on your input.
 
 ## Requirements Satisfied
+
+1. This is a single page application that was created using: 
+`create-react-app`
+
+2. The App utilizes 7 components as follows:
+    1. **App.js**
+    2. **Home.js**
+    3. **NavBar.js**
+    4. **About.js**
+    5. **Pits.js**
+    6. **PitCard.js**
+    7. **PitGenerator.js**
+
+3. There are 4 client-side routes (not including the App.js file) as follows:
+    1. *<Home> (same route as <App>)*
+    2. *<About>*
+    3. *<Pits>*
+    4. *<PitGenerator>*
+
+4. Utilizing the json-server-template provided, I created a db.json file that is accessible from both `GET` and `POST` requests. I have also incorporated a `DELETE` request in order to prevent the `POST` data requests from piling up. 
+
+    The `GET` request happens in the *<App>* component where the initial db.json data is rendered with the `useEffect` hook and subsequently passed down to the other components.
+
+    The `POST` and `DELETE` requests happen in the *<PitGenerator>* component where there is a controlled form that utilizes a number of state variables within the component.
+    
+5. A handful of CSS properties were added to the various pages including some references to:
+[React Bootstrap](https://react-bootstrap.github.io/) and [Semantic UI](https://react.semantic-ui.com/)
 
