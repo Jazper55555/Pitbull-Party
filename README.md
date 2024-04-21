@@ -81,5 +81,3 @@ All Pitbull pictures were obtained through [DOG API](https://dog.ceo/dog-api/)
 Some CSS properties were borrowed from [React Bootstrap](https://react-bootstrap.github.io/) and [Semantic UI](https://react.semantic-ui.com/)
 
 Various *page* backgrounds were obtained through Google Image Search
-
-# phase-2-project-GIF
