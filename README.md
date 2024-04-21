@@ -19,3 +19,31 @@ The first repository allows you to actually run the webpage using:
 
 The second repsoitory allows to access the data needed to populate the proper renders on each *page*. You can access the data using:
 `json-server --watch db.json`
+
+## Navigating the Webpage
+
+There are 4 main *pages* that may be navigated once the website is up and running:
+
+1. **Home**
+2. **About**
+3. **Pits**
+4. **Pit Generator**
+
+Each of these 4 *pages* can be found on either the **Home** page menu or the toggle menu found in the upper left hand corner of the screen.
+
+Here's the basic breakdown of each *page*:
+
+#### Home
+This is the Home *page* where you will immediately be shown the menu front and center. The navigation menu can also be found in the upper left hand corner of the screen.
+
+#### About
+This is where you will find some useful information on the webpage itself as well as some advocating words for the Pitbulls.
+
+#### Pits
+Here, you can see the Pitbulls that make up the Pitbull Party crew as well as some fun facts about each pup.
+
+#### Pit Generator
+This is a random image generator that will display a customized Pitbull Card similar to the ones in the Pits *page* based on the information you input. Each time you fill in the blanks, a new card is generated based on your input.
+
+## Requirements Satisfied
+
