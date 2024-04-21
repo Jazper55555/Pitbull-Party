@@ -74,3 +74,10 @@ This is a random image generator that will display a customized Pitbull Card sim
 5. A handful of CSS properties were added to the various pages including some references to:
 [React Bootstrap](https://react-bootstrap.github.io/) and [Semantic UI](https://react.semantic-ui.com/)
 
+## Acknolwedgements
+
+All Pitbull pictures were obtained through [DOG API](https://dog.ceo/dog-api/)
+
+Some CSS properties were borrowed from [React Bootstrap](https://react-bootstrap.github.io/) and [Semantic UI](https://react.semantic-ui.com/)
+
+Various *page* backgrounds were obtained through Google Image Search
