@@ -60,10 +60,10 @@ This is a random image generator that will display a customized Pitbull Card sim
     7. **PitGenerator.js**
 
 3. There are 4 client-side routes (not including the App.js file) as follows:
-    1. *<Home>*
-    2. *<About>*
-    3. *<Pits>*
-    4. *<PitGenerator>*
+    1. *Home (same as App)*
+    2. *About*
+    3. *Pits*
+    4. *PitGenerator*
 
 4. Utilizing the json-server-template provided, I created a db.json file that is accessible from both `GET` and `POST` requests. I have also incorporated a `DELETE` request in order to prevent the `POST` data requests from piling up. 
 
